@@ -1,0 +1,16 @@
+/* Dados dois polinômios p(x) = a0 + a1x + a2x 2 + ... + anx^ n  e q(x) = b0 + b1x + b2x 2 + ... + bmx n, 
+escrever um método que retorne a soma destes polinômios, na forma de um arranjo de elementos. 
+Os três arranjos que representarão os polinômios de entrada e de saída (retorno) deverão ser arranjos de elementos do tipo double, 
+nos quais a primeira posição (índice zero do arranjo) contém o valor que não multiplica x, 
+a segunda posição contém o valor que multiplica x elevado a primeira, 
+a terceira contém o valor que multiplica x elevado a segunda potência e assim por diante. 
+Assuma que os dois arranjos de entrada tem o mesmo tamanho (o de saída também deverá ter).
+*/
+
+static double[] soma(double []polinomioUm, double []polinomioDois){
+		double [] resultado = new double[polinomioUm.length];
+		for(int i = 0; i < polinomioUm.length; i++){
+			resultado[i] = (polinomioUm[i] + polinomioDois[i]);
+		}
+		return resultado;
+	}
